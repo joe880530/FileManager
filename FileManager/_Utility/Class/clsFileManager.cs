@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.IO;
+using FileManager._Utility.Class;
 
 namespace FileManager._Utility.Class
 {
-    class FileManager
+    class clsFileManager : IclsFileManager
     {
         #region Property Decleration(속성 선언)
         public string _File_name
@@ -33,6 +34,10 @@ namespace FileManager._Utility.Class
         }
         #endregion
         
+        #region Field Decleration(필드 선언)
+        private FileInfo _Field_FileInfo;
+        #endregion
+
         public void save()
         {
             try
@@ -40,6 +45,12 @@ namespace FileManager._Utility.Class
                 string _objFullPath = "";
 
                 _objFullPath = _File_path + "\\" + _File_name + string.Format(".{0}", _File_type);
+
+
+                if (!File.Exists(_objFullPath))
+                {
+                    File.Create(_objFullPath);
+                }
 
                 //#region 파일 타입 분류.
                 //switch (_File_type)

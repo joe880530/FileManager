@@ -1,10 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="FileManager._Utility.Class.FileManager">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+  <Class Name="FileManager._Utility.Class.clsFileManager">
+    <Position X="0.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAACAAAAAAAACAQAAAAAFAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>_Utility\Class\FileManager.cs</FileName>
+      <HashCode>AAAAAAAAEACAAAAAAIAAAQQAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_Utility\Class\clsFileManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FileManager.Form_FileManager">
+    <Position X="4" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACARAACIACAAgQAAAECiEAASAAABAAAABAAAAAAECIA=</HashCode>
+      <FileName>Form_Main.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="맑은 고딕" Size="9" />
